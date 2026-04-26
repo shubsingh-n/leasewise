@@ -1,0 +1,8 @@
+{
+  "name": "leasewise-monorepo",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ]
+}
