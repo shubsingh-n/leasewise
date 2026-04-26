@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, MessageSquare, Heart, User, Calendar, MapPin, Lock } from 'lucide-react';
+import { X, MessageSquare, Heart, User, Calendar, MapPin } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ContactRequestModal from '../Modals/ContactRequestModal';
 
@@ -9,13 +9,6 @@ interface FlatmatePanelProps {
   isSaved: boolean;
   onToggleSave: (e: React.MouseEvent) => void;
 }
-
-const obfuscatePhone = (phone: string) => {
-  if (!phone) return 'N/A';
-  const clean = phone.replace(/[^\d]/g, '');
-  if (clean.length < 5) return phone;
-  return `${phone.substring(0, 4)} XXX-XX${phone.substring(phone.length - 2)}`;
-};
 
 const FlatmatePanel: React.FC<FlatmatePanelProps> = ({ req, onClose, isSaved, onToggleSave }) => {
   const [isContactModalOpen, setIsContactModalOpen] = React.useState(false);

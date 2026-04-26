@@ -2,7 +2,7 @@ import React, { useEffect, useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   Home, Users, RefreshCw, ChevronDown, ChevronUp, Phone, MapPin, Bed, Calendar, Send, Mail, Info, Tag, Square, Hammer, 
-  MessageSquare, History, User, Save, CheckCircle, XCircle, Edit2, Trash2, LogOut, Shield
+  History, User, Save, CheckCircle, XCircle, Edit2, Trash2, LogOut, Shield
 } from 'lucide-react';
 import { getContactLogs, retriggerNotification, testTelegramSetup } from '../services/api';
 

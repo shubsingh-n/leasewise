@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   X, MapPin, Bed, Maximize, Shield, Wifi, Car, Zap, 
-  Phone, Navigation, Calendar, Info, ChevronLeft, ChevronRight,
-  ExternalLink, Compass, Dog, Heart, MessageCircle, Lock
+  Navigation, Calendar, Info, ChevronLeft, ChevronRight,
+  ExternalLink, Compass, Dog, Heart, MessageCircle
 } from 'lucide-react';
 import ContactRequestModal from '../Modals/ContactRequestModal';
 
@@ -14,13 +14,6 @@ interface PropertyPanelProps {
   isSaved: boolean;
   onToggleSave: (e: React.MouseEvent) => void;
 }
-
-const obfuscatePhone = (phone: string) => {
-  if (!phone) return 'N/A';
-  const clean = phone.replace(/[^\d]/g, '');
-  if (clean.length < 5) return phone;
-  return `${phone.substring(0, 4)} XXX-XX${phone.substring(phone.length - 2)}`;
-};
 
 // Haversine formula
 const calculateDistance = (lat1: number, lon1: number, lat2: number, lon2: number) => {
