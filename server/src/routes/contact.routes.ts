@@ -1,6 +1,6 @@
 import express from 'express';
-import { createContactRequest, getContactRequests } from '../controllers/contact.controller';
-import { requireAdmin } from '../middleware/auth.middleware';
+import { createContactRequest, getContactRequests } from '../controllers/contact.controller.js';
+import { requireAdmin } from '../middleware/auth.middleware.js';
 
 const router = express.Router();
 

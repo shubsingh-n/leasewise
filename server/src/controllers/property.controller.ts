@@ -1,5 +1,5 @@
 import express from 'express';
-import Property from '../models/Property';
+import Property from '../models/Property.js';
 
 export const getProperties = async (req: express.Request, res: express.Response) => {
   try {

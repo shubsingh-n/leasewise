@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
-import Property from '../models/Property';
-import FlatmateRequirement from '../models/FlatmateRequirement';
+import Property from '../models/Property.js';
+import FlatmateRequirement from '../models/FlatmateRequirement.js';
 import dotenv from 'dotenv';
 
 dotenv.config();

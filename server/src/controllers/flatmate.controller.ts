@@ -1,5 +1,5 @@
 import express from 'express';
-import FlatmateRequirement from '../models/FlatmateRequirement';
+import FlatmateRequirement from '../models/FlatmateRequirement.js';
 
 export const getRequirements = async (req: express.Request, res: express.Response) => {
   try {

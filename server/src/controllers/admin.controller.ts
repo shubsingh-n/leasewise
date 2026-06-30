@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
-import Property from '../models/Property';
-import FlatmateRequirement from '../models/FlatmateRequirement';
+import Property from '../models/Property.js';
+import FlatmateRequirement from '../models/FlatmateRequirement.js';
 
 // POST /api/admin/login
 export const adminLogin = async (req: Request, res: Response): Promise<void> => {
@@ -170,7 +170,7 @@ export const reactivateFlatmate = async (req: Request, res: Response): Promise<v
 };
 
 // GET /api/admin/listings/reactivate-public/:type/:id?token=...
-import { generateReactivateToken } from '../services/expiration.service';
+import { generateReactivateToken } from '../services/expiration.service.js';
 export const reactivatePublic = async (req: Request, res: Response): Promise<void> => {
   try {
     const { type, id } = req.params;

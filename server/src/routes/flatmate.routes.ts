@@ -1,5 +1,5 @@
 import express from 'express';
-import { createRequirement, getRequirements, getRequirementById } from '../controllers/flatmate.controller';
+import { createRequirement, getRequirements, getRequirementById } from '../controllers/flatmate.controller.js';
 
 const router = express.Router();
 

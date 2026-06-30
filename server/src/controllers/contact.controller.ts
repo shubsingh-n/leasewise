@@ -1,8 +1,8 @@
 import express from 'express';
-import Property from '../models/Property';
-import FlatmateRequirement from '../models/FlatmateRequirement';
-import ContactRequest from '../models/ContactRequest';
-import { sendTelegramMessage, formatContactRequestMessage } from '../services/telegram.service';
+import Property from '../models/Property.js';
+import FlatmateRequirement from '../models/FlatmateRequirement.js';
+import ContactRequest from '../models/ContactRequest.js';
+import { sendTelegramMessage, formatContactRequestMessage } from '../services/telegram.service.js';
 
 export const createContactRequest = async (req: express.Request, res: express.Response) => {
   try {

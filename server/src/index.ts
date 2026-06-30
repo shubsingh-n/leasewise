@@ -2,11 +2,11 @@ import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import propertyRoutes from './routes/property.routes';
-import flatmateRoutes from './routes/flatmate.routes';
-import adminRoutes from './routes/admin.routes';
-import contactRoutes from './routes/contact.routes';
-import { initExpirationCron } from './services/expiration.service';
+import propertyRoutes from './routes/property.routes.js';
+import flatmateRoutes from './routes/flatmate.routes.js';
+import adminRoutes from './routes/admin.routes.js';
+import contactRoutes from './routes/contact.routes.js';
+import { initExpirationCron } from './services/expiration.service.js';
 
 dotenv.config();
 

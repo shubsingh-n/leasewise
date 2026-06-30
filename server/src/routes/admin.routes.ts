@@ -13,13 +13,13 @@ import {
   reactivateProperty,
   reactivateFlatmate,
   reactivatePublic
-} from '../controllers/admin.controller';
+} from '../controllers/admin.controller.js';
 import {
   getContactRequests,
   retriggerContactNotification,
   debugTelegramSetup
-} from '../controllers/contact.controller';
-import { requireAdmin } from '../middleware/auth.middleware';
+} from '../controllers/contact.controller.js';
+import { requireAdmin } from '../middleware/auth.middleware.js';
 
 const router = express.Router();
 
