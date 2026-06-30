@@ -1054,7 +1054,7 @@ export default function AddListingModal({
                           className="relative rounded-2xl overflow-hidden border-2 border-slate-100 hover:border-rose-200 transition-all group"
                           title="Click to remove"
                         >
-                          <img src={src} alt="" className="w-full h-24 object-cover" />
+                          <img src={src} alt={`Listing preview image ${i + 1}`} className="w-full h-24 object-cover" />
                           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors" />
                           <div className="absolute top-2 right-2 bg-white/90 rounded-full p-1.5 opacity-0 group-hover:opacity-100 transition-opacity">
                             <X className="w-4 h-4 text-slate-900" />

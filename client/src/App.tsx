@@ -168,6 +168,7 @@ export default function App() {
       </header>
 
       <div className="flex-1 flex bg-slate-50 pt-16 md:pt-20 pb-0 md:pb-0 relative overflow-hidden">
+        <h1 className="sr-only">LeaseWise - Discover Rental Properties and Flatmates</h1>
         {mode === 'flat' ? (
           <>
         <aside className="hidden md:flex flex-col w-[360px] h-full bg-white border-r border-slate-200 z-10 shadow-2xl">
@@ -195,7 +196,7 @@ export default function App() {
                 `}
               >
                 <div className="relative h-44 overflow-hidden">
-                  <img src={prop.images?.[0]} alt="" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                  <img src={prop.images?.[0]} alt={prop.title || "Property thumbnail"} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                   <div className="absolute top-4 left-4 flex flex-col gap-2 items-start">
                     {prop.femaleOnly && (
                       <div className="bg-pink-500 text-white px-2 py-1 rounded-xl text-[9px] font-black uppercase shadow-sm flex items-center gap-1 border border-pink-400">

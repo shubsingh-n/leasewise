@@ -279,7 +279,7 @@ const PropertyPanel: React.FC<PropertyPanelProps> = ({ property, onClose, userLo
                <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center gap-4">
                      <div className="w-16 h-16 rounded-[1.5rem] bg-indigo-500/20 border-2 border-indigo-500/30 overflow-hidden p-1">
-                        <img src={`https://ui-avatars.com/api/?name=${property.contact?.name || 'Agent'}&background=6366f1&color=fff`} alt="" className="w-full h-full rounded-[1.2rem]" />
+                        <img src={`https://ui-avatars.com/api/?name=${property.contact?.name || 'Agent'}&background=6366f1&color=fff`} alt={`${property.contact?.name || 'Agent'} profile picture`} className="w-full h-full rounded-[1.2rem]" />
                      </div>
                      <div>
                         <div className="text-[9px] font-black text-indigo-400 uppercase tracking-[0.3em] mb-1">Contact</div>
@@ -322,7 +322,7 @@ const PropertyPanel: React.FC<PropertyPanelProps> = ({ property, onClose, userLo
             <X className="w-6 h-6" />
           </button>
           
-          <img src={images[currentImageIndex]} className="max-w-full max-h-full object-contain rounded-2xl shadow-2xl" />
+          <img src={images[currentImageIndex]} alt={`${property.title} - Image ${currentImageIndex + 1}`} className="max-w-full max-h-full object-contain rounded-2xl shadow-2xl" />
           
           {images.length > 1 && (
             <>
